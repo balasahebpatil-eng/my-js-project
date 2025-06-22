@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Info Website</title>
+  <style>
+    .image-box {
+      width: 200px;
+      margin: 20px;
+      display: inline-block;
+    }
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Click an Image to Learn More</h2>
+
+  <div class="image-box">
+    <img src="image1.jpg" onclick="goToInfo('info1.html')" alt="Image 1">
+    <p>Image 1</p>
+  </div>
+
+  <!-- <div class="image-box">
+    <img src="image2.jpg" onclick="goToInfo('info2.html')" alt="Image 2">
+    <p>Image 2</p>
+  </div> -->
+
+  <script>
+    function goToInfo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>

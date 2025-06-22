@@ -1,0 +1,153 @@
+#Course{
+    padding: 8vw 8vw 0vw 8vw;
+    text-align: center;
+ 
+}
+
+#Course .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+
+#Course .Courses{
+     text-align: start;
+     background-color: white;
+     height: 400px;
+     position: relative;
+     padding-top: 20px;
+     
+}
+
+#Course .Courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+#Course .Courses .details{
+    padding: 15px 15px 0 15px;
+}
+
+#Course .Courses .details i{
+     color: yellow;
+     font-size: .9rem;
+}
+
+#Course .Courses .cost{
+    background-color: rgb(74, 74, 136);
+    color: #fff;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    /* move the element leftward from the right edge */
+    bottom: 120px;
+    /* Move the element upward from bottom */
+}
+
+#Course .Courses1{
+    text-align: start;
+    background-color: white;
+    height: 500px;
+    position: relative;
+    
+}
+
+#Course .Courses1 img{
+   width: 100%;
+   height: 40%;
+   background-size: cover;
+   background-position: center;
+   
+}
+
+#Course .Courses1 .details{
+   padding: 15px 15px 0 15px;
+}
+
+#Course .Courses1 .details i{
+    color: yellow;
+    font-size: .9rem;
+}
+
+#Course .Courses1 .cost{
+   background-color: rgb(74, 74, 136);
+   color: #fff;
+   line-height: 70px;
+   width: 70px;
+   height: 70px;
+   text-align: center;
+   border-radius: 50%;
+   position: absolute;
+   right: 15px;
+   /* move the element leftward from the right edge */
+   bottom: 260px;
+   /* Move the element upward from bottom */
+   
+}
+
+nav{
+    /* position: fixed;
+    width: 100%; */
+     /* very important because of this we can fix nav bar on screen with backgroung img */
+    background-color: whitesmoke; 
+    margin-bottom: 10px;
+    /* margin-top: 0%;
+    padding: 0%; */
+    top: 0;
+    bottom: 0;
+    width: 87%;
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    gap: 500px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    /* without position tag we cant access z-index */
+    z-index: 999; 
+    /* used for see nav tag while scrolling */
+}
+
+nav img{
+    width: 250px;
+    cursor: pointer;
+
+}
+
+nav .navigation{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+nav .navigation #menu{
+    width: 10px;
+    height: 30px;
+    display: none;
+}
+
+nav .navigation #close{
+     display: none;
+}
+
+nav .navigation a{
+    text-decoration: none!
+    important;
+    display: flex;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    
+}
+
+nav .navigation a:hover{
+    color: yellow;
+}

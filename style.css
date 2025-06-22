@@ -1,0 +1,517 @@
+
+nav{
+    /* position: fixed;
+    width: 100%; */
+     /* very important because of this we can fix nav bar on screen with backgroung img */
+    background-color: whitesmoke; 
+    margin-bottom: 10px;
+    /* margin-top: 0%;
+    padding: 0%; */
+    top: 0;
+    bottom: 0;
+    width: 87%;
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    gap: 500px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    /* without position tag we cant access z-index */
+    z-index: 999; 
+    /* used for see nav tag while scrolling */
+}
+
+nav img{
+    width: 250px;
+    cursor: pointer;
+
+}
+
+nav .navigation{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+nav .navigation #menu{
+    width: 10px;
+    height: 30px;
+    display: none;
+}
+
+nav .navigation #close{
+     display: none;
+}
+
+nav .navigation a{
+    text-decoration: none!
+    important;
+    display: flex;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    
+}
+
+nav .navigation a:hover{
+    color: yellow;
+}
+
+/* hr{
+
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.908);
+} */
+
+#home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("istockphoto-472045363-170667a.jpg");
+    /* linear gradient creats a smooth blend from one color to another */
+    height: 720px;
+    width:100%;
+    background-size: cover; 
+    /* background-size is very important it covers one images on full screen */
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#home h2{
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p{
+    width: 50%;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home .btn{
+    margin-top: 30px;
+}
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.blue{
+    color:white;
+    background-color: rgb(21,21,100);
+    transition: 0.3s ease;
+}
+
+#home a.blue:hover{
+    color:rgb(9, 9, 48);
+    background-color: white;
+}
+
+#home a.yellow{
+    color:white;
+    background-color: yellow;
+    transition: 0.3s ease;
+}
+
+#home a.yellow:hover{
+    color: yellow;
+    background-color: white;
+}
+
+/* Features */
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+    width: 100%;
+}
+
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 10px;
+}
+
+#features .fea-box{
+    background-color: #f9f9fF;
+    text-align: start;
+}
+
+#features .fea-box i{
+    font-size: 2.3rem;
+   color: rgb(44,44,80);
+}
+
+#featues .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46,46,59);
+    padding: 13px 0 7px 0;
+}
+
+#featues .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70,70,87);
+   
+}
+
+/* course */
+
+#Course{
+    padding: 8vw 8vw 0vw 8vw;
+    text-align: center;
+ 
+}
+
+#Course .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+
+#Course .Courses{
+     text-align: start;
+     background-color: white;
+     height: 400px;
+     position: relative;
+     padding-top: 20px;
+     
+}
+
+#Course .Courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+#Course .Courses .details{
+    padding: 15px 15px 0 15px;
+}
+
+#Course .Courses .details i{
+     color: yellow;
+     font-size: .9rem;
+}
+
+#Course .Courses .cost{
+    background-color: rgb(74, 74, 136);
+    color: #fff;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    /* move the element leftward from the right edge */
+    bottom: 120px;
+    /* Move the element upward from bottom */
+}
+
+#Course .Courses1{
+    text-align: start;
+    background-color: white;
+    height: 500px;
+    position: relative;
+    
+}
+
+#Course .Courses1 img{
+   width: 100%;
+   height: 40%;
+   background-size: cover;
+   background-position: center;
+   
+}
+
+#Course .Courses1 .details{
+   padding: 15px 15px 0 15px;
+}
+
+#Course .Courses1 .details i{
+    color: yellow;
+    font-size: .9rem;
+}
+
+#Course .Courses1 .cost{
+   background-color: rgb(74, 74, 136);
+   color: #fff;
+   line-height: 70px;
+   width: 70px;
+   height: 70px;
+   text-align: center;
+   border-radius: 50%;
+   position: absolute;
+   right: 15px;
+   /* move the element leftward from the right edge */
+   bottom: 260px;
+   /* Move the element upward from bottom */
+   
+}
+
+
+   /* registration */
+
+#registration{
+    padding: 6vw 8vw 6vw 8vw;
+    margin-bottom: 20px;
+    background-image: linear-gradient(rgba(99, 112, 168, 0.5),rgba(81, 91, 233, 0.5)), url("background.png");
+    height: 500px;
+    width: 85%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registration .remainder {
+  color: #fff;
+
+}
+
+#registration .remainder .time{
+    display: flex ;
+    margin-top: 40px;
+}
+
+#registration .remainder .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    border-radius: 10px;
+    margin: 0  5px 10px 5px;
+    border: 0.5px solid white;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#registration .form{
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+}
+
+#registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;
+}
+
+#registration .form input::placeholder{
+    color: #413c3c;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#registration .form .btn{
+    margin-top: 20px;
+}
+
+
+#registration .form a.yellow{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    color:white;
+    background-color: yellow;
+    transition: 0.3s ease;
+}
+
+#registration .form a.yellow:hover{
+    color: yellow;
+    background-color: white;
+}
+
+/* experts */
+#experts{
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+
+#experts .expert-box .profile img{
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+#experts .expert-box{
+    display: flex;
+    padding:10px 40px 0 40px;
+    gap: 100px;
+    margin-top: 40px;
+}
+
+#experts .expert-box .profile{
+    background-color: #f9f9fF;
+}
+
+.pro-linkss a{
+ margin-top: 10px;
+  pointer-events: auto;
+  cursor: pointer;
+  font-size: 40px;
+      margin: 20px;
+      color: #333;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s ease;
+}
+
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid rgb(21, 21, 100);
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+.pro-links i:hover{
+    background-color: rgb(7, 7, 65);
+    color: white;
+   border: 1px solid rgb(21,21,100);
+   cursor: pointer;
+   transform: scale(1.2);
+}
+body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+
+/* footer */
+footer{
+    padding: 8vw;
+    background-color: rgb(15, 15, 30);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+footer .footer-col{
+    padding-bottom: 40px;
+}
+
+footer h3{
+    color: rgb(241,240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: ease;
+}
+
+footer li:hover{
+    color:rgb(241,240, 245)
+}
+
+footer p{
+    color: #7b838a;
+}
+
+footer .subscribe{
+    margin-top: 20px;
+}
+
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background-color: #334F6c;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+footer .subscriber  a{
+        text-decoration: none;
+        font-size: 0.9rem;
+        padding: 12px 15px;
+        background-color: white;
+        font-weight: 600;
+    }
+    
+    footer .subscriber  a{
+        color: #fff;
+        background-color: #fdc93b;
+        transition: 0.3s ease;
+    }
+    
+    footer .subscriber  a{
+        color:rgb(9, 9, 48);
+        background-color: white;
+    }
+    
+    footer .subscriber  a{
+        color:white;
+        background-color: yellow;
+        transition: 0.3s ease;
+    }
+    
+    footer .subscriber  a:hover{
+        color: rgb(34, 34, 72);
+        background-color: rgb(220, 220, 208);
+    }
+
+    footer .copyright{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    footer .copyright p{
+        color: #fff;
+    }
+
+    footer .copyright .pro-links{
+        margin-top: 10px;
+        
+     }
+     
+     footer .copyright .pro-links i{
+         padding: 10px 13px;
+         background-color:  rgb(78, 78, 99);
+         color: #fff;
+     }
+     
+     footer .copyright .pro-links i:hover{
+         background-color: rgb(155, 198, 64);
+         color: #2c2c2c;
+     }
+    
+@media(max-width:750px){
+    nav{
+    padding: 15px;
+}
+}

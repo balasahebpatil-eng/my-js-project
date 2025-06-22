@@ -1,0 +1,278 @@
+nav{
+    /* position: fixed;
+    width: 100%; */
+     /* very important because of this we can fix nav bar on screen with backgroung img */
+    background-color: whitesmoke; 
+    margin-bottom: 10px;
+    /* margin-top: 0%;
+    padding: 0%; */
+    top: 0;
+    bottom: 0;
+    width: 87%;
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    gap: 500px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    /* without position tag we cant access z-index */
+    z-index: 999; 
+    /* used for see nav tag while scrolling */
+}
+
+nav img{
+    width: 250px;
+    cursor: pointer;
+
+}
+
+nav .navigation{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+nav .navigation #menu{
+    width: 10px;
+    height: 30px;
+    display: none;
+}
+
+nav .navigation #close{
+     display: none;
+}
+
+nav .navigation a{
+    text-decoration: none!
+    important;
+    display: flex;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    
+}
+
+nav .navigation a:hover{
+    color: yellow;
+}
+
+
+#home{
+     background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("abut.jpg");
+}
+#home h1{
+    color: white;
+    padding: 15rem;
+    text-align: center;
+}
+h4{
+    color: rgb(131, 134, 137);
+}
+
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.main{
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+}
+.left-images{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.left-images img{
+    width: 120px;
+    border-radius: 8px;
+    
+}
+.left-images div img{
+    width: 200px;
+}
+.right-image{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.right-image img{
+    width: 400px;
+    border-radius: 8px;
+}
+.content{
+    max-width: 400px;
+    margin-left: 10rem;
+}
+.content h2{
+    color: #222;
+}
+.feature{
+    margin-top: 20px;
+}
+.feature div{
+    margin-bottom: 10px;
+}
+
+ #features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+    margin-bottom: 800px;
+}
+
+#features .fea-base{
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 10px;
+     flex-wrap: wrap;
+
+}
+
+#features .fea-box{
+    background-color: #f9f9fF;
+    text-align: start;
+}
+
+#features .fea-box i{
+    font-size: 2.3rem;
+   color: rgb(44,44,80);
+}
+
+#featues .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46,46,59);
+    padding: 13px 0 7px 0;
+}
+
+#featues .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70,70,87);
+   
+}
+
+ 
+footer{
+    padding: 8vw;
+    background-color: rgb(15, 15, 30);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+footer .footer-col{
+    padding-bottom: 40px;
+}
+
+footer h3{
+    color: rgb(241,240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: ease;
+}
+
+footer li:hover{
+    color:rgb(241,240, 245)
+}
+
+footer p{
+    color: #7b838a;
+}
+
+footer .subscribe{
+    margin-top: 20px;
+}
+
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background-color: #334F6c;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+footer .subscriber  a{
+        text-decoration: none;
+        font-size: 0.9rem;
+        padding: 12px 15px;
+        background-color: white;
+        font-weight: 600;
+    }
+    
+    footer .subscriber  a{
+        color: #fff;
+        background-color: #fdc93b;
+        transition: 0.3s ease;
+    }
+    
+    footer .subscriber  a{
+        color:rgb(9, 9, 48);
+        background-color: white;
+    }
+    
+    footer .subscriber  a{
+        color:white;
+        background-color: yellow;
+        transition: 0.3s ease;
+    }
+    
+    footer .subscriber  a:hover{
+        color: rgb(34, 34, 72);
+        background-color: rgb(220, 220, 208);
+    }
+
+    footer .copyright{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    footer .copyright p{
+        color: #fff;
+    }
+
+    footer .copyright .pro-links{
+        margin-top: 10px;
+        
+     }
+     
+     footer .copyright .pro-links i{
+         padding: 10px 13px;
+         background-color:  rgb(78, 78, 99);
+         color: #fff;
+     }
+     
+     footer .copyright .pro-links i:hover{
+         background-color: rgb(155, 198, 64);
+         color: #2c2c2c;
+     }
+    
