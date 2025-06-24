@@ -4,7 +4,8 @@
   <title>Image 1 Info</title>
 </head>
 <style>
- body {
+ 
+    body {
       font-family: Arial, sans-serif;
       background: #f4f4f4;
       padding: 60px;
@@ -12,12 +13,9 @@
 
     .course-container {
       display: flex;
-      gap: 50px;
+      gap: 60px;
       flex-wrap: wrap;
       justify-content: center;
-    }
-    h2{
-      text-align: center;
     }
 
     .course-card {
@@ -34,30 +32,30 @@
       transform: scale(1.02);
     }
 
-    .course-card img {
-      width: 40%;
+    .course-container img {
+      width: 50%;
       height: 150px;
-      display: block;
-       margin: auto; 
       text-align: center;
+      display: block;
+      margin: auto;
     }
 
-    .course-content {
+    .course-container {
       padding: 20px;
     }
 
-    .course-content h3 {
+    .course-container h3 {
       margin: 0 0 10px;
       color: #333;
     }
 
-    .course-content p {
+    .course-container p {
       font-size: 14px;
       margin: 6px 0;
       color: #555;
     }
 
-    .course-content .highlight {
+    .course-container .highlight {
       font-weight: bold;
       color: #111;
     }
@@ -75,6 +73,9 @@
 
     .btn:hover {
       background: #0056b3;
+    }
+    h2{
+      text-align: center;
     }
   </style>
 </head>
@@ -98,9 +99,9 @@
         <a href="#" class="btn">View Course</a>
       </div>
     </div> -->
- <div class="card">
-    <img src="112221-freelance-worker-570x380 (1).webp" alt="Web Development Course">
-    
+ <div class="course-card">
+    <img src="photo-1505330622279-bf7d7fc918f4.jpg" alt="Web Development Course">
+    <div class="course-content"></div>
     <h3>Web Development - Alison Certified</h3>
 
     <p><span class="highlight">Importance:</span> Learn how to build complete websites using HTML, CSS, and JavaScript.</p>
@@ -110,7 +111,7 @@
     <p><span class="highlight">Certificate:</span> Yes (Alison Verified)</p>
     <p><span class="highlight">Rating:</span> ⭐⭐⭐⭐☆ (450 students)</p>
 
-    <a href="https://alison.com/course/diploma-in-web-development" class="btn" target="_blank">Go to Alison Course</a>
+   
   </div>
     <!-- Web Dev Alison
     <div class="course-card">

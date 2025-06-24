@@ -87,7 +87,7 @@ body{
 
 .main{
     display: flex;
-    padding: 40px;
+    padding: 30px;
     gap: 30px;
 }
 .left-images{
@@ -129,7 +129,7 @@ body{
  #features{
     padding: 5vw 8vw 0 8vw;
     text-align: center;
-    margin-bottom: 800px;
+    margin-bottom: 100px;
 }
 
 #features .fea-base{
@@ -163,9 +163,7 @@ body{
     font-weight: 400;
     color: rgb(70,70,87);
    
-}
-
- 
+} 
 footer{
     padding: 8vw;
     background-color: rgb(15, 15, 30);
@@ -275,4 +273,4 @@ footer .subscriber  a{
          background-color: rgb(155, 198, 64);
          color: #2c2c2c;
      }
-    
+     

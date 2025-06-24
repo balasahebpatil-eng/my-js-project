@@ -131,7 +131,7 @@ nav .navigation a:hover{
 #features{
     padding: 5vw 8vw 0 8vw;
     text-align: center;
-    width: 100%;
+    width: 86%;
 }
 
 #features .fea-base{
@@ -510,8 +510,3 @@ footer .subscriber  a{
          color: #2c2c2c;
      }
     
-@media(max-width:750px){
-    nav{
-    padding: 15px;
-}
-}
