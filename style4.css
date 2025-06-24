@@ -109,6 +109,7 @@ nav{
     justify-content: space-between;
     padding: 1vw 8vw;
     gap: 500px;
+    font-weight: 500px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     position: fixed; 
     /* without position tag we cant access z-index */
